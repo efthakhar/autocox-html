@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+.nav-link {
+    color: #1c1c1c;
+}
+.dark-triple-gradient {
+    background: linear-gradient(135deg, #000000, #222222, #444444);
+    color: white;
+    padding: 20px;
+}
+
+/* slider */
+.carousel-inner img {
+    height: 550px;
+    /* Set the fixed height */
+    object-fit: cover;
+    /* Ensure images fit properly */
+}
+
+
+    /* Change color on hover */
+.fa-square-facebook {
+    font-size:35px;
+    color: #fff;
+}
+.fa-square-youtube {
+    font-size:35px;
+    color: #fff;
+}
+.fa-square-instagram {
+    font-size:35px;
+    color: #fff;
+}
+.fa-linkedin {
+    font-size:35px;
+    color: #fff;
+}
+
+.socal-link a:hover .fa-square-facebook {
+    color: #1877F2;
+}
+
+/* Facebook Blue */
+.socal-link a:hover .fa-square-youtube {
+    color: #FF0000;
+}
+
+/* Twitter Blue */
+.socal-link a:hover .fa-square-instagram {
+    color: #e1306c;
+}
+
+/* Instagram Pink */
+.socal-link a:hover .fa-linkedin {
+    color: #0A66C2;
+}
+
+/* LinkedIn Blue */
+
+body,
+html {
+    height: 100%;
+    background-color: white;
+}
+
+.container {
+    overflow: hidden;
+
+    .slider {
+        animation: slidein 30s linear infinite;
+        white-space: nowrap;
+
+        .logos {
+            width: 100%;
+            display: inline-block;
+            margin: 0px 0;
+
+            .fab {
+                width: calc(100% / 5);
+                animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+            }
+        }
+    }
+}
+
+@keyframes slidein {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.button {
+    background-color: #17469e;
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #123b86;
+    /* Darker shade for hover effect */
+}
+
+.nav-link {
+    color: #333333;
+    font-weight: bold;
+    font-family: 'GothamBook', sans-serif;
+}
+
+.nav-link:hover {
+    color: #e91f2f;
+    font-weight: bold;
+    font-family: 'GothamBook', sans-serif;
+}
+
+.sticky-header {
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1020;
+}
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575px) {
+    .custom-class {
+        font-size: 14px;
+        background: lightgray;
+    }
+}
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+    .custom-class {
+        font-size: 16px;
+        background: lightblue;
+    }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+    .custom-class {
+        font-size: 18px;
+        background: lightgreen;
+    }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+    .custom-class {
+        font-size: 20px;
+        background: lightyellow;
+    }
+}
+
+/* Extra Large devices (1200px and up) */
+@media (min-width: 1200px) {
+    .custom-class {
+        font-size: 22px;
+        background: lightcoral;
+    }
+}
+
+/* Shrinking Effect */
+.sticky-header.shrink {
+    padding: 10px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+/* Page Content */
+
+
+
+
+/* Contact page css */
+.opening-houre .item{
+    display: flex;
+}
+.opening-houre .item .title{
+   margin-right: 40px;
+}

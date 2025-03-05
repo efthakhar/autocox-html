@@ -40,7 +40,7 @@ summary {
 
 /* slider */
 .carousel-inner img {
-    height: 550px;
+    /* height: 550px; */
     /* Set the fixed height */
     object-fit: cover;
     /* Ensure images fit properly */
@@ -231,13 +231,6 @@ html {
 
 a.active {
     color:#1877F2;
-}
-
-.carousel-item img {
-    max-height: 500px;
-    /* Default height */
-    object-fit: cover;
-    /* Ensure images fit well */
 }
 
 @media (max-width: 768px) {

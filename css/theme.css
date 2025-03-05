@@ -228,3 +228,28 @@ html {
 .opening-houre .item .title{
    margin-right: 40px;
 }
+
+a.active {
+    color:#1877F2;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    /* Default height */
+    object-fit: cover;
+    /* Ensure images fit well */
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 300px;
+        /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        max-height: 200px;
+        /* Adjust for mobile screens */
+    }
+}

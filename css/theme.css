@@ -246,3 +246,17 @@ a.active {
         /* Adjust for mobile screens */
     }
 }
+
+.contact-form-bg {
+    background-image: url('../images/car-4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    /* Full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}

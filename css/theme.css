@@ -1,6 +1,10 @@
 /* @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+:root{
+    --primary-color: #17469d;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +12,7 @@
 
 body {
     /* font-family: 'Roboto', sans-serif; */
-    font-family: "Open Sans", sans-serif;
-    
+    font-family: "Open Sans", sans-serif !important; 
     font-style: normal;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
@@ -34,7 +37,18 @@ summary {
 
 .nav-link {
     color: #1c1c1c;
+    font-weight: 500;
 }
+
+.nav-link.active{
+    color: var(--primary-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+
 .dark-triple-gradient {
     background: linear-gradient(135deg, #000000, #222222, #444444);
     color: white;
@@ -43,6 +57,7 @@ summary {
 
 /* slider */
 .carousel-inner img {
+    height: 80vh;
     /* height: 550px; */
     /* Set the fixed height */
     object-fit: cover;
@@ -152,15 +167,10 @@ html {
 
 .nav-link {
     color: #333333;
-    font-weight: bold;
-    font-family: 'GothamBook', sans-serif;
+    /* font-weight: bold; */
+    /* font-family: 'GothamBook', sans-serif; */
 }
 
-.nav-link:hover {
-    color: #e91f2f;
-    font-weight: bold;
-    font-family: 'GothamBook', sans-serif;
-}
 
 .sticky-header {
     position: sticky !important;
